@@ -9,7 +9,7 @@ function compute() {
 
     document.getElementById("result").innerText = "If you deposit " + principal
         + ", \nat an interest rate of " + rate + "%.\nYou will receive an amout of "
-        + interest + ",\nin the year 2025."
+        + interest + ",\nin the year " + futureYear + ".";
 }
         
 function updateRate() {
