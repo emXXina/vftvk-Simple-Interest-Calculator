@@ -1,5 +1,13 @@
 function compute() {
-    var principal = document.getElementById("principal").value;
+    var principalField = document.getElementById("principal");
+    var principal = principalField.value;
+    
+    if (principal <= 0) {
+        alert("Enter a positive number.");
+        principalField.focus();
+        return false;
+    }
+
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
 
@@ -8,9 +16,9 @@ function compute() {
     var futureYear = new Date().getFullYear() + parseInt(years);
 
     document.getElementById("result").innerHTML =
-        "If you deposit <mark>" + principal + "</mark>,\n"
-        + "at an interest rate of <mark>" + rate + "%</mark>.\n"
-        + "You will receive an amout of <mark>" + interest + "</mark>,\n"
+        "If you deposit <mark>" + principal + "</mark>,<br/>"
+        + "at an interest rate of <mark>" + rate + "%</mark>.<br/>"
+        + "You will receive an amout of <mark>" + interest + "</mark>,<br/>"
         + "in the year <mark>" + futureYear + "</mark>.";
 }
         
