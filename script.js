@@ -16,10 +16,10 @@ function compute() {
     var futureYear = new Date().getFullYear() + parseInt(years);
 
     document.getElementById("result").innerHTML =
-        "If you deposit <mark>" + principal + "</mark>,<br/>"
+        "<br>If you deposit <mark>" + principal + "</mark>,<br/>"
         + "at an interest rate of <mark>" + rate + "%</mark>.<br/>"
         + "You will receive an amout of <mark>" + interest + "</mark>,<br/>"
-        + "in the year <mark>" + futureYear + "</mark>.";
+        + "in the year <mark>" + futureYear + "</mark>.<br>";
 }
         
 function updateRate() {
