@@ -8,3 +8,7 @@ function compute() {
     var futureYear = new Date().getFullYear() + parseInt(years);
 }
         
+function updateRate() {
+    var rateValue = document.getElementById("rate").value;
+    document.getElementById("rate_val").innerText = rateValue;
+}
