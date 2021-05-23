@@ -12,7 +12,7 @@ h1 {
 .maindiv {
     background-color: white;
     color: black;
-    width: 300px;
+    width: 500px;
     padding: 20px;
     border-radius: 25px;
     margin: 0 auto;
@@ -20,4 +20,8 @@ h1 {
 
 mark { 
   background-color: yellow;
+}
+
+table {
+    margin: 0 auto 1rem;
 }
