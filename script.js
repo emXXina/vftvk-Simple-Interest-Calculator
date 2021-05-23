@@ -7,9 +7,11 @@ function compute() {
 
     var futureYear = new Date().getFullYear() + parseInt(years);
 
-    document.getElementById("result").innerText = "If you deposit " + principal
-        + ", \nat an interest rate of " + rate + "%.\nYou will receive an amout of "
-        + interest + ",\nin the year " + futureYear + ".";
+    document.getElementById("result").innerText =
+        "If you deposit <mark>" + principal + "</mark>,\n"
+        + "at an interest rate of <mark>" + rate + "%</mark>.\n"
+        + "You will receive an amout of <mark>" + interest + "</mark>,\n"
+        + "in the year <mark>" + futureYear + "</mark>.";
 }
         
 function updateRate() {
